@@ -2,3 +2,4 @@ node_modules/
 less/
 gulpfile.js
 package.json
+bower_components/

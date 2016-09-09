@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content='width=device-width, initial-scale=1' name='viewport'>
+    <title>Green Valley | Rooms List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="page-header__inner">
+      <div class="wrapper">
+        <div class="page-header__logo">
+          <a href="index.html" class="logo"><img src="img/Logo.png" alt="logo"/></a>
+        </div>
+        <a class="burger">
+          <span class="burger__top"></span>
+          <span class="burger__middle"></span>
+          <span class="burger__bottom"></span>
+        </a>
+        <nav class="main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="room-list.html" class="main-nav__link">Номера</a></li>
+            <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Коттедж</a></li>
+            <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Ресторан</a></li>
+            <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Отдых</a></li>
+            <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="page-header__contacts">
+          <a class="" href="tel:+78127775588">+7 812 777-55-88</a>
+          г. Санкт-Петербург, Приморское ш. 600
+        </div>
+        <div class="page-header__btn">
+          <a class="btn btn--icon-calendar" href="form.html">Забронировать</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav id="menu" class="main-nav main-nav--sliding">
+    <ul class="main-nav__list">
+      <li class="main-nav__item"><a href="room-list.html" class="main-nav__link">Номера</a></li>
+      <li class="main-nav__item"><a href="single-room.html" class="main-nav__link">Коттедж</a></li>
+      <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Ресторан</a></li>
+      <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Отдых</a></li>
+      <li class="main-nav__item"><a href="javascript:void(0)" class="main-nav__link">Контакты</a></li>
+    </ul>
+  </nav>
+
+  <div class="reserv">
+    <div class="reserv__inner">
+      <h1 class="reserv__title">Бронирование</h1>
+      <p class="reserv__description">Чтобы забронировать номер в отеле или коттедж, заполните форму ниже или просто позвоните<br>по телефону: <a class="reserv__description--tel">+7 812 777-55-88</a></p>
+    </div>
+  </div>
+
+  <form action="">
+
+    <div class="form-block form-block--grey">
+      <div class="form-block__inner">
+        <p class="form-block__step">Шаг 1</p>
+        <h2 class="form-block__title">Дата отдыха</h2>
+        <div class="form-block__wrapper">
+          <div class="form-block__item">
+            <p class="form-block__subtitle">Дата въезда</p>
+            <input id="dayArrive" class="form-block__input form-block__input--day" type="text" placeholder="дд">
+            <input id="monthArrive" class="form-block__input form-block__input--month" type="text" placeholder="мм">
+            <input id="yearArrive" class="form-block__input form-block__input--year" type="text" placeholder="гггг">
+          </div>
+          <div class="form-block__item">
+            <p class="form-block__subtitle">Дата выезда</p>
+            <input id="dayDepart" class="form-block__input form-block__input--day" type="text" placeholder="дд">
+            <input id="monthDepart" class="form-block__input form-block__input--month" type="text" placeholder="мм">
+            <input id="yearDepart" class="form-block__input form-block__input--year" type="text" placeholder="гггг">
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-block">
+      <div class="form-block__inner">
+        <p class="form-block__step">Шаг 2</p>
+        <h2 class="form-block__title">Место проживания</h2>
+        <div class="form-block__wrapper form-block__wrapper--locate">
+          <div class="form-block__item form-block__item--locate">
+            <input id="formHotel" class="form-block__radio" type="radio" name="type_live" checked>
+            <label class="form-block__subtitle form-block__subtitle--hotel" for="formHotel">Отель</label>
+          </div>
+          <div class="form-block__item form-block__item--locate">
+            <input id="formCottage" class="form-block__radio" type="radio" name="type_live">
+            <label class="form-block__subtitle form-block__subtitle--cottage" for="formCottage">Коттедж</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-block form-block--grey">
+      <div class="form-block__inner form-block__inner--full">
+        <p class="form-block__step">Шаг 3</p>
+        <h2 class="form-block__title">Тип коттеджа</h2>
+        <div class="form-tabs__wrapper">
+          <div class="form-tabs">
+            <div class="form-tabs__type-wrap">
+              <input id="formFlag" class="form-block__radio" name="type_cottage" type="radio">
+              <label for="formFlag" class="form-tabs__type">Флагман</label>
+            </div>
+            <div class="form-tabs__type-wrap">
+              <input id="formLake" class="form-block__radio" name="type_cottage" type="radio">
+              <label for="formLake" class="form-tabs__type">Озёрный</label>
+            </div>
+            <div class="form-tabs__type-wrap">
+              <input id="formAlder" class="form-block__radio" name="type_cottage" type="radio">
+              <label for="formAlder" class="form-tabs__type">Ольховка</label>
+            </div>
+            <div class="form-tabs__type-wrap">
+              <input id="formPort" class="form-block__radio" name="type_cottage" type="radio">
+              <label for="formPort" class="form-tabs__type">Портовый</label>
+            </div>
+          </div>
+
+          <div id="tab_formFlag" class="form-tabs">
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--area">Площадь 100м<sup>2</sup></span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--rooms">3 комнаты</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--sleep">5 спальных мест</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wc">Раздельный санузел</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wifi">WI-FI</span>
+            </div>
+          </div>
+
+          <div id="tab_formLake" class="form-tabs">
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--area">Площадь 90м<sup>2</sup></span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--rooms">2 комнаты</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--sleep">4 спальных мест</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wc">Раздельный санузел</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wifi">WI-FI</span>
+            </div>
+          </div>
+          <div id="tab_formAlder" class="form-tabs">
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--area">Площадь 80м<sup>2</sup></span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--rooms">1 комнаты</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--sleep">3 спальных мест</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wc">Раздельный санузел</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wifi">WI-FI</span>
+            </div>
+          </div>
+          <div id="tab_formPort" class="form-tabs">
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--area">Площадь 70м<sup>2</sup></span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--rooms">1 комнаты</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--sleep">2 спальных мест</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wc">Раздельный санузел</span>
+            </div>
+            <div class="form-tabs__item">
+              <span class="form-tabs__subtitle form-tabs__subtitle--wifi">WI-FI</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-block">
+      <div class="form-block__inner">
+        <p class="form-block_step">Шаг 4</p>
+        <h2 class="form-block__title">Персональная информаци</h2>
+        <div class="pers-info">
+          <div class="pers-info__item">
+            <input id="formName" class="pers-info__input" type="text" placeholder="Имя">
+            <span class="jsFormControl"></span>
+          </div>
+          <div class="pers-info__item">
+            <input id="formLastName" class="pers-info__input" type="text" placeholder="Фамилия">
+            <span class="jsFormControl"></span>
+          </div>
+          <div class="pers-info__item">
+            <input id="formTel" class="pers-info__input" type="tel" placeholder="Номер телефона">
+            <span class="jsFormControl"></span>
+            <p class="pers-info__details">Мы свяжемся с вами в случае необходимости</p>
+          </div>
+          <div class="pers-info__item">
+            <input id="formEmail" class="pers-info__input" type="text" placeholder="E-mail">
+            <span class="jsFormControl"></span>
+            <P class="pers-info__details">На этот адрес мы вышлем вам подтверждение о забронированном номере</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="form-block form-block--grey">
+      <div class="form-block__inner form-block__inner--full">
+        <p class="form-block__step">Шаг 5</p>
+        <h2 class="form-block__title">Способ оплаты</h2>
+        <div class="pay">
+          <div class="pay__right">
+            <div class="pay__item">
+              <input id="payArrive" class="pay__radio" name="pay-type" type="radio">
+              <label class="pay__subtitle" for="payArrive">По приезду</label>
+              <p class="pay__description">Вы можете произвести оплату по факту заселения.</p>
+            </div>
+            <div class="pay__item">
+              <div class="pay__item-top">
+                <input id="payNow" class="pay__radio" name="pay-type" type="radio" checked>
+                <label class="pay__subtitle" for="payNow">Сейчас</label>
+                <p class="pay__description">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+              </div>
+              <div class="pay__item-bottom">
+                <div class="pay__card-inf-left">
+                  <div class="pay__block">
+                    <label for="fomrCardNum" class="pay__label">Номер карты</label>
+                    <input id="fomrCardNum" class="pay__input" type="text" placeholder="0000-0000-0000-0000">
+                    <span class="jsFormControl"></span>
+                  </div>
+                  <div class="pay__block">
+                    <label for="formNameCard" class="pay__label">Фамилия владельца карты</label>
+                    <input id="formNameCard" class="pay__input" type="text" placeholder="Vladimir Vladimirov">
+                    <span class="jsFormControl"></span>
+                  </div>
+                </div>
+                <div class="pay__card-inf-right">
+                  <div class="pay__block">
+                    <label for="formCvv" class="pay__label">Код CVV</label>
+                    <input id="formCvv" class="pay__input" type="text" placeholder="123">
+                    <span class="jsFormControl"></span>
+                  </div>
+                  <div class="pay__block">
+                    <label for="formDate" class="pay__label">Действует до</label>
+                    <input id="formDate" class="pay__input" type="text" placeholder="01 / 2018">
+                    <span class="jsFormControl"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pay__left">
+            <div class="pay__item">
+              <h3 class="pay__title">К оплате</h3>
+              <div class="pay__warning">
+              </div>
+            </div>
+          </div>
+          <button id="btnReserv" class="btn btn--reserv">Забронировать</button>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+  <footer class="page-footer">
+    <div class="page-footer__inner">
+      <div class="wrapper">
+        <div class="page-footer__adress">
+          <p class="page-footer__text">г. Санкт-Петербург Приморское ш. 600</p>
+        </div>
+        <div class="page-footer__logo">
+          <a class="logo" href="index.html"><img src="img/Logo.png" alt="logo"></a>
+          <div class="social-list">
+            <a class="social-list__icon social-list__icon--vk" href="avascript:void(0)"></a>
+            <a class="social-list__icon social-list__icon--inst" href="avascript:void(0)"></a>
+            <a class="social-list__icon social-list__icon--fb" href="avascript:void(0)"></a>
+          </div>
+        </div>
+        <div class="page-footer__contacts">
+          <p class="page-footer__text">+7 812 777-55-88 info@greenvalley.ru</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/jquery-2.2.3.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.pack.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/reviews.js"></script>
+  <script src="js/form.js"></script>
+
+</body>
+</html>
